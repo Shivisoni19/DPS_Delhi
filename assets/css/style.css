@@ -8,9 +8,10 @@
 # Normalize
 --------------------------------------------------------------*/
 :root {
-  --main-color-one:#DD131A;
+  /* --main-color-one:#DD131A; */
+  --main-color-one:#00a652;
   --main-color-two: #000565;
-  --secondary-color: #0E115A;
+  --secondary-color: #0081c9;
   --heading-color: #04072E;
   --paragraph-color: #727777;
   --heading-font: "Barlow Semi Condensed", sans-serif;
@@ -1172,11 +1173,16 @@ ul {
   transition: 0.7s all ease;
   font-weight: 600;
 }
-.btn-wrapper .boxed-btn.btn-sanatory {
+/* .btn-wrapper .boxed-btn.btn-sanatory {
   background-color: var(--main-color-one);
   text-transform: uppercase;
   -webkit-box-shadow: 0 7px 20px rgba(221, 19, 26, 0.3);
           box-shadow: 0 7px 20px rgba(221, 19, 26, 0.3);
+} */
+.btn-wrapper .boxed-btn.btn-sanatory {
+  background-color: #00a652;
+  text-transform: uppercase;
+  box-shadow: 0 7px 20px rgb(0 166 82 / 44%);
 }
 .btn-wrapper .boxed-btn.btn-sanatory .icon-paper-plan {
   margin-left: 5px;
@@ -1188,8 +1194,8 @@ ul {
 }
 .btn-wrapper .boxed-btn.btn-sanatory.style-01 {
   background-color: transparent;
-  color: var(--main-color-one);
-  border: 2px solid var(--main-color-one);
+  color: #fff;;
+  border: 2px solid #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-transform: capitalize;
@@ -8269,7 +8275,7 @@ input[type=checkbox] {
 	## Header
 --------------------------------------------------------------*/
 .header-area {
-  padding: 290px 0 225px;
+  padding: 232px 0 225px;
   position: relative;
   z-index: 99;
   overflow: hidden;
@@ -8336,7 +8342,7 @@ input[type=checkbox] {
 }
 .header-area.header-sanatory {
   background-color: transparent;
-  padding: 200px 0 150px;
+  /* padding: 200px 0 150px; */
 }
 .header-area.header-sanatory.home-six {
   background: var(--heading-color);
@@ -8383,7 +8389,7 @@ input[type=checkbox] {
   font-size: 65px;
   line-height: 85px;
   font-weight: 700;
-  color: #000565;
+  color: #ffffff;
   margin-bottom: 20px;
   max-width: 600px;
 }
@@ -8405,11 +8411,11 @@ input[type=checkbox] {
   }
 }
 .header-area.header-sanatory .header-inner h5 {
-  font-size: 20px;
-  line-height: 28px;
-  font-family: "Roboto";
-  font-weight: bold;
-  color: #04072E;
+    font-size: 32px;
+    line-height: 28px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #dd131a;
 }
 .header-area.header-sanatory .header-inner h5 i {
   font-size: 10px;
@@ -8417,7 +8423,7 @@ input[type=checkbox] {
   margin-right: 10px;
 }
 .header-area.header-sanatory .header-inner p {
-  color: #04072E;
+  color: #fff;
   font-size: 16px;
   line-height: 28px;
   max-width: 600px;
@@ -8954,6 +8960,20 @@ input[type=checkbox] {
           animation: updown-two 1s both linear alternate infinite;
 }
 
+/* .header-style-01{
+    position: fixed;
+    background: white;
+    z-index: 9;
+    width: 100%;
+} */
+
+.header-wrapper{
+    position: fixed;
+    background: white;
+    z-index: 9;
+    width: 100%;
+}
+
 .header-style-01.home-six {
   background: #F9F9FF;
 }
@@ -8961,6 +8981,11 @@ input[type=checkbox] {
 .header-top {
   margin-top: -7px;
 }
+
+/* .header-top {
+    margin-top: -46px;
+} */
+
 .header-top.home-six {
   padding-top: 23px;
   position: relative;
@@ -8999,7 +9024,7 @@ input[type=checkbox] {
 .header-top .top-social-share i {
   width: 30px;
   height: 30px;
-  background: var(--main-color-two);
+  background: transparent;
   line-height: 30px;
   text-align: center;
   border-radius: 50%;

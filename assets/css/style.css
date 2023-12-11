@@ -1469,8 +1469,8 @@ ul {
   z-index: 99;
   font-size: 25px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 5px rgba(221, 19, 26, 0.5);
-          box-shadow: 0 0 5px rgba(221, 19, 26, 0.5);
+  /* -webkit-box-shadow: 0 0 5px rgba(221, 19, 26, 0.5); */
+  box-shadow: 0 0 5px #28a745a8;
   display: none;
 }
 
@@ -8276,6 +8276,12 @@ input[type=checkbox] {
 --------------------------------------------------------------*/
 .header-area {
   padding: 232px 0 225px;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
+}
+.header-area1 {
+  padding: 60px 0 225px;
   position: relative;
   z-index: 99;
   overflow: hidden;
